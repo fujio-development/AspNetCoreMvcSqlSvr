@@ -1,0 +1,51 @@
+﻿@model AspNetCoreMvcSqlSvr.Models.Shohin
+
+@{
+    ViewData["Title"] = "商品削除";
+}
+
+<h1>商品削除</h1>
+
+<h3>削除してよろしいでしょうか？</h3>
+<div>
+    <h4>商品</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ShohinCode)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ShohinCode)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ShohinName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ShohinName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.EditDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.EditDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.EditTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.EditTime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Note)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Note)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="NumId" />
+        <input type="submit" value="削除" class="btn btn-danger" /> |
+        <a asp-action="Index">リストに戻る</a>
+    </form>
+</div>

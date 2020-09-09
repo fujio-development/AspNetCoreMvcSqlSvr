@@ -1,0 +1,25 @@
+﻿@model ErrorViewModel
+@{
+    ViewData["Title"] = "エラー";
+}
+
+<h1 class="text-danger">エラー</h1>
+<h2 class="text-danger">リクエストの処理中にエラーが発生しました。</h2>
+
+@if (Model.ShowRequestId)
+{
+    <p>
+        <strong>リクエスト ID:</strong> <code>@Model.RequestId</code>
+    </p>
+}
+
+<h3>Development Mode</h3>
+<p>
+    <strong>開発</strong>への交換 environmentは、発生したエラーに関するより詳細な情報を表示します。
+</p>
+<p>
+    <strong>デプロイされたアプリケーションで開発環境を有効にしないでください</strong>、
+    例外によって機密情報がエンドユーザに表示される可能性があるためです。
+    ローカルデバッグでは、<strong>ASPNETCORE_ENVIRONMENT</strong> 環境変数を、<strong>development</strong> に設定し、アプリケーションを再起動することで開発環境を有効にできます。
+    アプリを再起動します。
+</p>

@@ -1,0 +1,66 @@
+﻿@model IEnumerable<AspNetCoreMvcSqlSvr.Models.Shohin>
+
+@{
+    ViewData["Title"] = "インデックス";
+}
+
+<h1>インデックス</h1>
+
+<p>
+    <a asp-action="Create">商品の追加</a>
+</p>
+<form asp-controller="Shohins" asp-action="Index" method="get">
+    <p>
+        商品名: <input type="text" name="searchString" method="get">
+        <input type="submit" value="前方一致検索" class="btn btn-primary" />
+    </p>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ShohinCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ShohinName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EditDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EditTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Note)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ShohinCode)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ShohinName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EditDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EditTime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Note)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.NumId">編集</a> |
+                    <a asp-action="Details" asp-route-id="@item.NumId">詳細表示</a> |
+                    <a asp-action="Delete" asp-route-id="@item.NumId">削除</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
