@@ -142,7 +142,6 @@ C:\Workspace\DotNet\AspNetCoreMvcSqlSvr\AspNetCoreMvcSqlSvr\bin\Release\netcorea
 C:\Workspace\DotNet\AspNetCoreMvcSqlSvr\AspNetCoreMvcSqlSvr\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Workspace\DotNet\AspNetCoreMvcSqlSvr\AspNetCoreMvcSqlSvr\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Workspace\DotNet\AspNetCoreMvcSqlSvr\AspNetCoreMvcSqlSvr\bin\Release\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Workspace\DotNet\AspNetCoreMvcSqlSvr\AspNetCoreMvcSqlSvr\obj\Release\netcoreapp3.1\AspNetCoreMvcSqlSvr.csprojAssemblyReference.cache
 C:\Workspace\DotNet\AspNetCoreMvcSqlSvr\AspNetCoreMvcSqlSvr\obj\Release\netcoreapp3.1\AspNetCoreMvcSqlSvr.AssemblyInfoInputs.cache
 C:\Workspace\DotNet\AspNetCoreMvcSqlSvr\AspNetCoreMvcSqlSvr\obj\Release\netcoreapp3.1\AspNetCoreMvcSqlSvr.AssemblyInfo.cs
 C:\Workspace\DotNet\AspNetCoreMvcSqlSvr\AspNetCoreMvcSqlSvr\obj\Release\netcoreapp3.1\AspNetCoreMvcSqlSvr.csproj.CoreCompileInputs.cache
